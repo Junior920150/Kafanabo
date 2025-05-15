@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey | Junior Arthur Kafanabo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="horizontal-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="survey.html">Survey</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Website Feedback Survey</h2>
+      <form>
+        <p>How do you rate this portfolio?</p>
+        <input type="radio" id="excellent" name="rating" value="excellent" required>
+        <label for="excellent">Excellent</label><br>
+
+        <input type="radio" id="good" name="rating" value="good">
+        <label for="good">Good</label><br>
+
+        <input type="radio" id="fair" name="rating" value="fair">
+        <label for="fair">Fair</label><br>
+
+        <p>What sections do you like?</p>
+        <input type="checkbox" id="home" name="section" value="Home">
+        <label for="home">Home</label><br>
+
+        <input type="checkbox" id="about" name="section" value="About">
+        <label for="about">About</label><br>
+
+        <input type="checkbox" id="projects" name="section" value="Projects">
+        <label for="projects">Projects</label><br>
+
+        <p>Suggestions:</p>
+        <textarea name="suggestions" rows="4" cols="30"></textarea><br>
+
+        <input type="submit" value="Submit Survey">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Junior Arthur Kafanabo.</p>
+  </footer>
+</body>
+</html>

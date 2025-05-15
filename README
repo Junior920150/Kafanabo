@@ -1,0 +1,57 @@
+ My Personal Portfolio Website:
+ Welcome to my Personal Portfolio Website, a showcase of my skills, projects, and passion for web development. 
+ This website was designed and developed using HTML5, CSS3, and JavaScript to demonstrate my understanding of front-end web technologies and best practices. 
+ Whether you're a potential employer, client, or collaborator, this portfolio reflects not just what I’ve learned, but how I apply it to create responsive, accessible, and interactive websites.
+ Feel free to explore the sections to learn more about me, view my past projects, and get in touch!
+
+ Tools Used
+- HTML5 (Semantic Structure)
+- CSS3 (External, Internal, Inline Styling)
+- JavaScript (DOM Manipulation, Form Validation, Dark Mode Toggle)
+
+ Key Features Implemented
+- Responsive Layout (Desktop & Mobile)
+- Dark/Light Theme Toggle
+- Dynamic Greeting based on Time of Day
+- Project Details Show/Hide using JavaScript
+- Contact Form with Regex Validation (Email and Phone Number)
+- Accessible Design (Keyboard Navigation, Proper Alt Attributes)
+- SEO Best Practices (Meta Tags)
+
+ Challenges Faced & Solutions
+1. Responsive 2-Column and 3-Column Layouts
+Challenge: Structuring the About and Projects pages to work in multiple column layouts across different screen sizes.
+
+Solution: Used CSS Flexbox and media queries to create fluid layouts. For smaller screens, the layout automatically collapses to a single column for better mobile usability.
+
+2. Dark/Light Mode Toggle
+Challenge: Implementing a dark/light theme toggle that remembers the user's preference.
+
+Solution: Created a JavaScript function that toggles a CSS class (dark-mode) on the body. Used localStorage to remember the user’s preference across page reloads.
+
+function toggleTheme() {
+  document.body.classList.toggle('dark-mode');
+  localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+}
+
+
+3. Accessible Design
+Challenge: Making sure the site is usable for all users, including those who rely on screen readers or keyboard navigation.
+
+Solution: Added alt attributes to all images, used proper HTML5 semantic tags like <nav>, <section>, <article>, and ensured every form input had a <label>. Tab indexes and focus styles were used for better keyboard navigation.
+
+4. Form Validation with Regex
+Challenge: Ensuring the contact and survey forms accept only valid inputs, such as email and phone number formats.
+
+Solution: Used JavaScript with regular expressions (regex) to check field formats before submission, and HTML5 required attributes for basic validation.
+
+function validateEmail(email) {
+  const regex = /^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$/;
+  return regex.test(email);
+}
+
+
+ Deployment
+- Deployed on GitHub Pages: https://junior920150.github.io/Junior/
+
+---
